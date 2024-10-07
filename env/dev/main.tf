@@ -1,0 +1,24 @@
+module "dev_vm" {
+  source                     = "../../modules/vm"
+  enviroment                 = "dev"
+  mail_secret_key            = var.mail_secret_key
+  mail_user                  = var.mail_user
+  admin_username             = "adminuser"
+  domain                     = var.domain
+  resource_group             = "IN-RG-75083"
+  nic_name                   = "IN-NIC-75083"
+  mail_service               = "gmail"
+  security_group_name        = "IN-SG-75083"
+  ssh_key_path               = "./keys/712incident_server"
+  port                       = "3000"
+  server_name                = "IN-Server-7503"
+  location                   = "eastus2"
+  mapbox_access_token        = var.mapbox_access_token
+  mongo_url                  = var.mongo_db
+  subnet_name                = "IN-SUBNET-Memo"
+  mongo_initdb_root_username = var.mongo_initdb_root_username
+  mongo_initdb_root_password = var.mongo_initdb_root_password
+  mongo_db                   = var.mongo_db
+  ip_name                    = "IN-IP-75083"
+  vnet_name                  = "IN-VNET-Juan"
+}
