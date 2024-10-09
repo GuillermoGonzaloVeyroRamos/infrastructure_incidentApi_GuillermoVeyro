@@ -1,7 +1,7 @@
 module "dev_vm" {
   source                     = "../../modules/vm"
   enviroment                 = "dev"
-  mail_secret_key            = var.MAIL_SECRET_KEY
+  mail_secret_key            =  var.MAIL_SECRET_KEY
   mail_user                  = var.MAIL_USER
   admin_username             = "adminuser"
   domain                     = var.DOMAIN
@@ -23,3 +23,4 @@ module "dev_vm" {
   vnet_name                  = "IN-VNET-Juan"
 }
 
+ 

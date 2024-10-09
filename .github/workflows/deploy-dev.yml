@@ -8,6 +8,11 @@ on:
       - 'modules/**'
     
 
+permissions:
+  id-token: write
+  contents: read
+  pull-request: write
+
 env:
   ARM_CLIENT_ID: "${{secrets.ARM_CLIENT_ID}}" 
   ARM_CLIENT_SECRET: "${{secrets.ARM_CLIENT_SCRET}}"
