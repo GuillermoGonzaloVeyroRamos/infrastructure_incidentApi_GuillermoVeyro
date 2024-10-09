@@ -21,6 +21,4 @@ module "dev_vm" {
   mongo_db                   = var.MONGO_DB
   ip_name                    = "IN-IP-75083"
   vnet_name                  = "IN-VNET-Juan"
-}
-
- 
+} 
