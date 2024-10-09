@@ -4,14 +4,14 @@ on:
     branches:
       - master
     paths:
-      - 'nev/dev/**'
+      - 'env/dev/**'
       - 'modules/**'
     
 
 permissions:
   id-token: write
   contents: read
-  pull-request: write
+  pull-requests: write
 
 env:
   ARM_CLIENT_ID: "${{secrets.ARM_CLIENT_ID}}" 
