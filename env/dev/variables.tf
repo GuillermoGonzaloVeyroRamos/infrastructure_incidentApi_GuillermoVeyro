@@ -1,39 +1,42 @@
-variable "mongo_url" {
+variable "MONGO_URL" {
   type = string
 }
-
-variable "port" {
+variable "PORT" {
   type = string
 }
-
-variable "mongo_db" {
+variable "MONGO_DB" {
   type = string
 }
-
-variable "mail_secret_key" {
+variable "MAIL_SECRET_KEY" {
   type = string
 }
-
-variable "mapbox_access_token" {
+variable "MAIL_SERVICE" {
   type = string
 }
-
-variable "mail_service" {
+variable "MAIL_USER" {
   type = string
 }
-
-variable "mail_user" {
+variable "MAPBOX_ACCESS_TOKEN" {
   type = string
 }
-
-variable "mongo_initdb_root_username" {
+ 
+variable "DOMAIN" {
   type = string
 }
-
-variable "mongo_initdb_root_password" {
+ 
+variable "SSH_PRIVATE_KEY"{
+  type = string
+  default=""
+}
+ 
+variable "SSH_PUBLIC_KEY" {
+  type = string
+  default=""
+}
+ 
+variable "MONGO_INITDB_ROOT_USERNAME"{
   type = string
 }
-
-variable "domain" {
+variable "MONGO_INITDB_ROOT_PASSWORD"{
   type = string
 }
